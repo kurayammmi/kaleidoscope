@@ -1,0 +1,273 @@
+@media only screen and (max-width: 950px) {
+  .hero__wrapper {
+    flex-direction: column-reverse;
+  }
+  .hero__image {
+    margin-bottom: 50px;
+  }
+  .hero__socials {
+    display: none;
+  }
+
+  .hero__text-descrtop {
+    font-size: 25px;
+    line-height: 108%;
+    margin-bottom: 25px;
+  }
+
+  .hero__text-descrbottom {
+    font-size: 25px;
+    line-height: 108%;
+  }
+
+  .hero__company-name {
+    font-size: 45px;
+    line-height: 57px;
+    letter-spacing: 0.155em;
+  }
+
+  .hero__text-continue {
+    width: 269px;
+    height: 60px;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.155em;
+  }
+
+  //   services
+  .services__info-headline {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .services__headline-title {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.155em;
+  }
+
+  .services__headline-secondTitle {
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.155em;
+  }
+
+  .services__accordeon-item {
+    width: 550px;
+  }
+
+  .services__item-title {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.155em;
+  }
+
+  .services__item-desc {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  // reviews
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.155em;
+  }
+
+  .reviews__desc {
+    font-size: 20px;
+    line-height: 108%;
+    /* or 22px */
+    letter-spacing: 0.04em;
+  }
+
+  .reviews__company-name {
+    font-size: 45px;
+    line-height: 57px;
+    letter-spacing: 0.155em;
+  }
+
+  .reviews__accordeon-item {
+    width: 310px;
+    min-height: 50px;
+  }
+
+  .reviews__item-title {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.155em;
+  }
+
+  .reviews__item-desc {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nav__items {
+    display: none;
+  }
+
+  .open-menu .nav__socials{
+    display: block;
+    margin-top: 30px;
+  }
+
+
+  .header__logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  .nav__menu {
+    display: block;
+    transition: all 0.2s linear;
+  }
+
+  .nav__items-list + .nav__items-list {
+    padding-left: 0;
+  }
+
+  .nav__items-link {
+    display: block;
+    padding: 9px 224px 12px 42px;
+    width: 347px;
+    height: 50px;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+  }
+
+  // hero
+  .hero {
+    margin-bottom: 120px;
+  }
+  .hero__image {
+    width: 416px;
+    height: 460px;
+  }
+
+  // services
+  .services__img {
+    display: block;
+    margin-bottom: 20px;
+    // &-picture {
+    //   width: 100%;
+    //   height: 460px;
+    //   background-size: cover;
+    // }
+  }
+
+  .services__accordeon-item {
+    padding-left: 10px;
+    width: 355px;
+    min-height: 50px;
+  }
+
+  .services__item-title{
+    max-width: 300px;
+    span{
+      font-size: 15px;
+    }
+    &::after{
+      right: -20px;
+    }
+  }
+
+  .services__accordeon-items .active .services__item-title::after{
+    right: -20px;
+  }
+
+  .reviews__info-modelka {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  // footer
+  .footer__rights {
+    font-size: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+
+  .nav__items-link {
+    display: block;
+    padding: 9px 154px 12px 42px;
+    width: 157px;
+    height: 50px;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+  }
+
+  .hero__image{
+    width: 320px;
+    margin: 0;
+  }
+
+  .hero__text-continue{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-align: center;
+  }
+
+  // services
+  .services{
+    margin-bottom: 100px;
+  }
+  .services__wrapper{
+    justify-content: center;
+    align-items: center;
+  }
+  .services__company{
+    display: none;
+  }
+
+  .services__accordeon-item{
+    width: 290px;
+  }
+
+  .services__item-title{
+    max-width: 200px;
+    span{
+      font-size: 15px;
+    }
+    &::after{
+      right: -55px;
+    }
+  }
+
+  .services__accordeon-items .active .services__item-title::after{
+    top: 15px;
+    right: -55px;
+  }
+
+  // reviews
+  .reviews__info-company{
+    display: none;
+  }
+  .reviews__info{
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews__accordeon-item{
+    width: 290px;
+  }
+  .reviews__item-title{
+    &::after{
+      right: -10px;
+    }
+  }
+
+  .reviews__accordeon-items .reviews-active .reviews__item-title::after{
+    top: 5px;
+    right: -10px;
+  }
+
+}

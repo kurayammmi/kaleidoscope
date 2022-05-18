@@ -1,0 +1,152 @@
+html,
+body {
+  height: 100%;
+  font-family: "Exo 2", sans-serif;
+  font-family: "Rajdhani", sans-serif;
+  background: #363636;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// menu
+.bar1 {
+  position: relative;
+  top: 0px;
+  height: 1px;
+}
+.bar2 {
+  position: relative;
+  top: 10px;
+  height: 1px;
+  display: block;
+}
+.bar3 {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  top: 20px;
+}
+// -----------------
+.nav__menu .bar1,
+.nav__menu .bar2,
+.nav__menu .bar3 {
+  height: 1px;
+  width: 100%;
+  display: block;
+  background: #ffffff;
+}
+
+/* ----------- close btn ------------- */
+.close-btn {
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  background: transparent;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.close-btn .bar1 {
+  transform: rotate(-130deg);
+  top: 30px;
+  height: 3px;
+  width: 50%;
+  display: block;
+  background: rgb(255, 255, 255);
+  position: absolute;
+}
+
+.close-btn .bar2 {
+  display: none;
+}
+
+.close-btn .bar3 {
+  transform: rotateZ(130deg);
+  height: 3px;
+  top: 30px;
+  width: 50%;
+  display: block;
+  background: rgb(255, 255, 255);
+  position: absolute;
+}
+
+// open menu
+.open-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: #363636;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: 900;
+  transition: all 0.2s linear;
+}
+
+.open-menu .nav__socials-items{
+  flex-direction: row;
+}
+
+.open-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.open-menu ul li {
+  padding-top: 15px;
+}
+
+
+
+.open-menu ul li a {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.155em;
+  color: #ffffff;
+}
+
+// .open-menu .fixed{
+// 	position: fixed;
+// }
+.fixed {
+  position: fixed;
+  overflow: hidden;
+  height: 100vh;
+}
+

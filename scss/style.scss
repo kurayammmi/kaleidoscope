@@ -1,0 +1,455 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+.header {
+  margin-bottom: 20px;
+  &__inner {
+    padding-top: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    &-img {
+    }
+  }
+}
+.nav {
+  display: flex;
+  align-items: center;
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+}
+.nav__items-list + .nav__items-list {
+  padding-left: 30px;
+}
+.nav__items-link {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.155em;
+  color: #ffffff;
+  transition: 0.2s all linear;
+  &:hover {
+    color: #ee6539;
+  }
+}
+.nav__socials {
+  display: none;
+}
+.nav__socials-items {
+  display: flex;
+  align-items: center;
+}
+.nav__socials-list  + .nav__socials-list{
+  padding-left: 15px;
+}
+.nav__socials-link {
+}
+.nav__socials-icon {
+}
+.nav__menu {
+  // display: none;
+  // border: none;
+  // outline: none;
+  // cursor: pointer;
+  // background: transparent;
+  top: 2rem;
+  right: 2rem;
+  height: 50px;
+  width: 70px;
+  padding: 16px;
+  position: absolute;
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+// hero
+.hero {
+  margin-bottom: 200px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.hero__info {
+  display: flex;
+  align-items: center;
+}
+.hero__info-company {
+  width: 44px;
+  height: 325px;
+}
+.hero__company-name {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 57px;
+  letter-spacing: 0.155em;
+  text-transform: capitalize;
+  color: #ffffff;
+  transform: rotate(90deg);
+}
+.hero__info-text {
+  margin-left: 17px;
+}
+.hero__text-descrtop {
+  max-width: 360px;
+  font-family: "Exo 2";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 108%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.hero__text-descrbottom {
+  max-width: 305px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 108%;
+  /* or 32px */
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.hero__text-continue {
+  margin-top: 80px;
+  display: block;
+  width: 269px;
+  height: 60px;
+  padding: 11px 41px 20px 41px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.155em;
+  text-transform: capitalize;
+  color: #ee6539;
+  border: 3px solid #ffffff;
+  filter: drop-shadow(-2px 3px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+}
+.hero__image {
+  width: 450px;
+  height: 502px;
+  &-world {
+  }
+}
+.hero__socials {
+}
+.hero__socials-items {
+}
+.hero__items-list + .hero__items-list {
+  padding-top: 20px;
+}
+.hero__items-link {
+}
+.hero__items-img {
+}
+
+// services
+.services {
+  margin-bottom: 200px;
+  &__wrapper {
+    display: flex;
+  }
+}
+.services__img {
+  display: none;
+}
+.services__img-picture {
+}
+.services__company {
+  margin-top: 80px;
+  width: 44px;
+  height: 325px;
+}
+.services__company-name {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 57px;
+  letter-spacing: 0.155em;
+  text-transform: capitalize;
+  color: #ffffff;
+  transform: rotate(90deg);
+}
+.services__info {
+  margin-left: 17px;
+}
+.services__info-headline {
+  display: flex;
+  align-items: center;
+  margin-bottom: 27px;
+}
+.services__headline-title {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 57px;
+  letter-spacing: 0.155em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.services__headline-secondTitle {
+  margin-left: 40px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.155em;
+  color: #ffffff;
+}
+.services__info-accordeon {
+}
+.services__accordeon-items {
+}
+.services__accordeon-item {
+  padding: 7px 23px 13px 23px;
+  width: 835px;
+  min-height: 50px;
+  overflow: hidden;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.active {
+}
+.services__item-title {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.155em;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  span{
+    color: #ee6539;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    width: 40px;
+    height: 20px;
+    background-image: url("../images/accordeon-nonactive-arrow.svg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+}
+.services__item-desc {
+  padding-top: 20px;
+  max-width: 698px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.155em;
+  color: #ffffff;
+  display: none;
+}
+
+.services__accordeon-items .active .services__item-desc {
+  display: block;
+}
+
+.services__accordeon-items .active .services__item-title {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    width: 40px;
+    height: 20px;
+    background-image: url("../images/accordeon-active-arrow.svg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+}
+
+// services
+.reviews {
+    margin-bottom: 100px;
+}
+.reviews__info-modelka {
+  display: none;
+}
+.reviews__modelka-img {
+}
+.reviews__title {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 57px;
+  letter-spacing: 0.155em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.reviews__desc {
+  font-family: "Exo 2";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 108%;
+  /* or 32px */
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.reviews__info {
+  display: flex;
+}
+.reviews__info-company {
+  width: 44px;
+  height: 325px;
+}
+.reviews__company-name {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 57px;
+  letter-spacing: 0.155em;
+  text-transform: capitalize;
+  color: #ffffff;
+  transform: rotate(90deg);
+}
+.reviews__info-accordeon {
+  margin-left: 17px;
+}
+.reviews__accordeon-items {
+}
+.reviews__accordeon-item {
+  padding: 7px 23px 13px 23px;
+  width: 512px;
+  min-height: 50px;
+  overflow: hidden;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.reviews-active {
+}
+.reviews__item-title {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.155em;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    width: 40px;
+    height: 20px;
+    background-image: url("../images/reviews-arrow-down.svg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+}
+.reviews__item-desc {
+  padding-top: 20px;
+  max-width: 698px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.155em;
+  color: #ffffff;
+  display: none;
+}
+
+.reviews__accordeon-items .reviews-active .reviews__item-desc {
+  display: block;
+}
+
+.reviews__accordeon-items .reviews-active .reviews__item-title {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    width: 40px;
+    height: 20px;
+    background-image: url("../images/reviews-arrow-down.svg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    transform: rotate(180deg);
+  }
+}
+
+// footer
+.footer {
+    padding-top: 67px;
+  width: 100%;
+  min-height: 266px;
+  background: #363636;
+  &__wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+}
+.footer__logo {
+  &-img {
+      margin-bottom: 48px;
+  }
+}
+.footer__left {
+}
+.footer__rights {
+    font-family: 'Exo 2';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 36px;
+/* identical to box height */
+letter-spacing: 0.155em;
+color: #FFFFFF;
+}
+.footer__right {
+}
+.footer__socials-items {
+    display: flex;
+    align-items: center;
+}
+.footer__items-list  + .footer__items-list {
+    padding-left: 20px;
+}
+.footer__items-link {
+}
+.footer__items-img {
+}
+
+@import "media";
